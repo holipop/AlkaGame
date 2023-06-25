@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c350mgi53sha"]
+
+[ext_resource type="Script" path="res://Test/label.cs" id="1_i0bov"]
+
+[node name="Label" type="Label"]
+offset_left = 508.0
+offset_top = 242.0
+offset_right = 705.0
+offset_bottom = 287.0
+text = "Hello World!"
+script = ExtResource("1_i0bov")
