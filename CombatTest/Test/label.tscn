@@ -1,11 +1,35 @@
-[gd_scene load_steps=2 format=3 uid="uid://c350mgi53sha"]
+[gd_scene load_steps=4 format=3 uid="uid://c350mgi53sha"]
 
 [ext_resource type="Script" path="res://Test/label.cs" id="1_i0bov"]
+[ext_resource type="Script" path="res://Test/Button.cs" id="2_qc5rx"]
+[ext_resource type="Script" path="res://Test/Counter.cs" id="3_mxgu0"]
 
 [node name="Label" type="Label"]
-offset_left = 508.0
-offset_top = 242.0
-offset_right = 705.0
-offset_bottom = 287.0
+offset_left = 61.9999
+offset_top = 62.0
+offset_right = 216.0
+offset_bottom = 89.0
+scale = Vector2(3.48904, 3.49489)
 text = "Hello World!"
 script = ExtResource("1_i0bov")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_left = -1.0
+offset_top = 43.0
+offset_right = 114.0
+offset_bottom = 99.0
+text = "Add 1"
+script = ExtResource("2_qc5rx")
+
+[node name="Counter" type="Label" parent="."]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 57.0
+offset_right = 171.0
+offset_bottom = 80.0
+text = "0"
+script = ExtResource("3_mxgu0")
+
+[connection signal="pressed" from="Button" to="Counter" method="OnButtonPressed"]
