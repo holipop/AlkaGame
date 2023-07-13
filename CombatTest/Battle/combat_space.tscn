@@ -1,0 +1,68 @@
+[gd_scene load_steps=3 format=3 uid="uid://btdwm777rk1xr"]
+
+[ext_resource type="Script" path="res://Battle/CombatSpace.cs" id="1_n7hbm"]
+[ext_resource type="Script" path="res://Battle/Alka.cs" id="2_cpkn5"]
+
+[node name="CombatSpace" type="Node2D"]
+script = ExtResource("1_n7hbm")
+
+[node name="TurnCounter" type="Label" parent="."]
+offset_left = 745.0
+offset_top = 551.0
+offset_right = 814.0
+offset_bottom = 577.0
+scale = Vector2(3.08273, 2.81729)
+text = "0
+"
+
+[node name="PlayTurn" type="Button" parent="."]
+offset_left = 452.0
+offset_top = 527.0
+offset_right = 611.0
+offset_bottom = 591.0
+scale = Vector2(1.69428, 1.61192)
+text = "PlayTurn()"
+
+[node name="Pember" type="Node2D" parent="."]
+script = ExtResource("2_cpkn5")
+
+[node name="Submit" type="Button" parent="Pember"]
+offset_left = 122.0
+offset_top = 325.0
+offset_right = 279.0
+offset_bottom = 378.0
+scale = Vector2(2.18425, 2.10664)
+toggle_mode = true
+text = "SubmitMove()"
+
+[node name="Name" type="Label" parent="Pember"]
+offset_left = 216.0
+offset_top = 259.0
+offset_right = 277.0
+offset_bottom = 285.0
+scale = Vector2(2.2315, 1.98043)
+text = "Pember
+"
+
+[node name="Aquott" type="Node2D" parent="."]
+position = Vector2(531, 3)
+script = ExtResource("2_cpkn5")
+
+[node name="Submit" type="Button" parent="Aquott"]
+offset_left = 122.0
+offset_top = 325.0
+offset_right = 279.0
+offset_bottom = 378.0
+scale = Vector2(2.18425, 2.10664)
+toggle_mode = true
+text = "SubmitMove()"
+
+[node name="Name" type="Label" parent="Aquott"]
+offset_left = 231.0
+offset_top = 258.0
+offset_right = 292.0
+offset_bottom = 310.0
+scale = Vector2(2.2315, 1.98043)
+text = "Aquott
+
+"
