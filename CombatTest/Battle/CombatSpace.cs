@@ -20,6 +20,7 @@ public partial class CombatSpace : Node2D
 		playTurn = GetNode<Godot.Button>("PlayTurn");
 		turnCounter = GetNode<Godot.Label>("TurnCounter");
 		playTurn.Disabled = true;
+		playTurn.Pressed += PlayTurnPressed;
 	}
 	private void ConnectAlka(Alka buny) => buny.Connect("SubmitMove", new Callable(this, "OnSubmitMove"));
 	private void OnSubmitMove()
@@ -35,7 +36,6 @@ public partial class CombatSpace : Node2D
 		if (bunySubmitted && softSubmitted)
 		{
 			playTurn.Disabled = false;
-			playTurn.Pressed += PlayTurnPressed;
 		}
 	}
 	private void PlayTurnPressed()

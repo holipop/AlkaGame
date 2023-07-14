@@ -7,19 +7,19 @@
 script = ExtResource("1_n7hbm")
 
 [node name="TurnCounter" type="Label" parent="."]
-offset_left = 745.0
-offset_top = 551.0
-offset_right = 814.0
-offset_bottom = 577.0
+offset_left = 717.0
+offset_top = 549.0
+offset_right = 786.0
+offset_bottom = 575.0
 scale = Vector2(3.08273, 2.81729)
 text = "0
 "
 
 [node name="PlayTurn" type="Button" parent="."]
-offset_left = 452.0
-offset_top = 527.0
-offset_right = 611.0
-offset_bottom = 591.0
+offset_left = 424.0
+offset_top = 525.0
+offset_right = 583.0
+offset_bottom = 589.0
 scale = Vector2(1.69428, 1.61192)
 text = "PlayTurn()"
 
